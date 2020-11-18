@@ -11,7 +11,7 @@ Below are the projects I worked on during Mod 1. Follow the links to check out t
 
 __Week 6 - <a href="https://github.com/philmccarthy/night_writer" target="_blank">Night Writer</a>__: A Ruby program which encodes & decodes braille.
 
-__Week 4-5 - <a href="https://github.com/philmccarthy/futbol" target="_blank">Futbol</a>__: Data Access Layer and Object Relationship Mapping exploration using data from a fictional soccer league to analyze statistics.
+__Week 4-5 - <a href="https://github.com/philmccarthy/futbol" target="_blank">Futbol</a>__: Data Access Layer and Object Relationship Mapping exploration using data from a fictional soccer league to analyze statistics. This project was a precursor to our introduction to Ruby on Rails & ActiveRecord. We were tasked with understanding & building basic database functions that will be abstracted by AR when we dive into ROR next mod.
 
 __Week 2-3 - <a href="https://github.com/philmccarthy/battleship" target="_blank">Battleship</a>__: Command-line playable program in the style of the popular boardgame Battleship. <a href="https://repl.it/@philmccarthy/battleship#README.md" target="_blank">Play Battleship on repl.it!</a>
 
@@ -22,7 +22,7 @@ I'm proud to have come out of the first quarter with a solid programming foundat
 
 __Ruby Mechanics__
   - Use & manipulate Ruby's primary data types, with particular focus on hashes in the second half of the module
-  - Use enumarables to iterate over collections
+  - Use enumarables to iterate over collections (especially nested ones)
   - Manage programs with flow control structures and boolean expressions
   - Use methods (functions), arguments and return values to write logical code
   - Create classes that use instance variables, attribute readers, and instance methods

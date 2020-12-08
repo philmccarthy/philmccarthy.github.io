@@ -8,7 +8,7 @@ categories: turing, rails
 
 > "factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects), and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance."
 
-## Setup
+### Setup
 
 First, ensure the `gem 'factory_bot_rails'` is in your Gemfile.
 
@@ -36,7 +36,7 @@ Per thoughtbot, the creators of FactoryBot, [their preference is](https://though
 
 So, run `touch /spec/factories/factories.rb`.
 
-## Usage
+### Usage
 
 In this file, define your Factories like so:
 

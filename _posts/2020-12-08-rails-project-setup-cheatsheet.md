@@ -8,7 +8,7 @@ One small piece of [Turing's](https://turing.io/) backend mod 2 program is engra
 
 My awesome classmates have contributed tons of resources like the one below. Primary credit to [Ely Hess](https://www.linkedin.com/in/ely-hess-766716141/) for first compiling this rails setup cheatsheet.
 
-## Create project file in specific Rails version
+### Create project file in specific Rails version
 
 `rails _5.2.4.3_ new music -T --database=postgresql --skip-spring --skip-turbolinks`
 
@@ -17,7 +17,7 @@ My awesome classmates have contributed tons of resources like the one below. Pri
 - --skip-spring - Spring is a Rails application preloader. It speeds up development by keeping your application running in the background so you don’t need to boot it every time you run a test, rake task or migration but it benefits more advanced developers the most. We are going to not include it in our Gemfile.
 - --skip-turbolinks - Enables faster page loading by using AJAX call behind the scenes but has some nasty/subtle edge cases where your app will not work as expected. For those reasons, we don’t enable it by default.
 
-## Gems - add to Gemfile under development: :test
+### Gems - add to Gemfile under development: :test
 
 ```ruby
 gem 'rspec-rails'
@@ -32,17 +32,17 @@ gem 'nyan-cat-formatter' # Optional CLI colorful craziness
 
 Then run `bundle install` in terminal to ensure our new gems are installed.
 
-## Configure RSpec
+### Configure RSpec
 
 `rails g rspec:install`
 
-## Add SimpleCov
+### Add SimpleCov
 
 (goes at top of rails_helper.rb)
 require 'simplecov'
 SimpleCov.start
 
-## Add Shoulda Matchers to rails_helper.rb
+### Add Shoulda Matchers to rails_helper.rb
 
 (inside the RSpec block)
 
@@ -55,7 +55,7 @@ Shoulda::Matchers.configure do |config|
 end
 ```
 
-## Create databases
+### Create databases
 
 `db:create` creates the database
 
@@ -75,7 +75,7 @@ end
 
 source: [BKSpurgeon & moritz at SO](https://stackoverflow.com/a/10302357/14060786)
 
-## Drop, create & migrate (last resort)
+### Drop, create & migrate (last resort)
 
 Only do this if a setup step was missed or messed up. We prefer to fix forward with migrations if the project is already off the ground.
 
@@ -83,23 +83,23 @@ Only do this if a setup step was missed or messed up. We prefer to fix forward w
 `rake db:create`
 `rake db:migrate`
 
-## Add tables to DB
+### Add tables to DB
 
 `rails g migration CreateThemeParks name:string city:integer open:boolean`
 `rails g migration CreateRides name:string max_occupants:integer`
 `rails db:migrate`
 
-## Go back in time
+### Go back in time
 
 `rake db:rollback STEP=1 - rolls back one migration.`
 
-## Connect table's primary key to foreign key
+### Connect table's primary key to foreign key
 
 `rails g migration AddThemeParkToRides band:references`
 `rails g migration AddResortToVacationers venue:references`
 `rails db:migrate`
 
-## Using FactoryBot
+### Using FactoryBot
 
 Confirm `gem 'factory_bot_rails'` is in your Gemfile.
 

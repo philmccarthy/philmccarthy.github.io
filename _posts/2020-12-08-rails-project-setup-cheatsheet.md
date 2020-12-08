@@ -39,8 +39,11 @@ Then run `bundle install` in terminal to ensure our new gems are installed.
 ### Add SimpleCov
 
 (goes at top of rails_helper.rb)
+
+```ruby
 require 'simplecov'
 SimpleCov.start
+```
 
 ### Add Shoulda Matchers to rails_helper.rb
 
@@ -80,23 +83,29 @@ source: [BKSpurgeon & moritz at SO](https://stackoverflow.com/a/10302357/1406078
 Only do this if a setup step was missed or messed up. We prefer to fix forward with migrations if the project is already off the ground.
 
 `rake db:drop`
+
 `rake db:create`
+
 `rake db:migrate`
 
 ### Add tables to DB
 
 `rails g migration CreateThemeParks name:string city:integer open:boolean`
+
 `rails g migration CreateRides name:string max_occupants:integer`
+
 `rails db:migrate`
 
 ### Go back in time
 
-`rake db:rollback STEP=1 - rolls back one migration.`
+`rake db:rollback STEP=1` - rolls back one migration.
 
 ### Connect table's primary key to foreign key
 
 `rails g migration AddThemeParkToRides band:references`
+
 `rails g migration AddResortToVacationers venue:references`
+
 `rails db:migrate`
 
 ### Using FactoryBot

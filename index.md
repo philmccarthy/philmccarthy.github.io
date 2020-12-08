@@ -6,4 +6,4 @@ layout: home
 title: Home
 ---
 
-Hey! I'm Phil. I'm a software developer based in Denver.
+Hey! I'm Phil. I'm a software engineer based in Denver.

@@ -1,5 +1,9 @@
-# Expanding on FactoryBot
-
+---
+layout: post
+title:  "Expanding on FactoryBot"
+date:   2020-12-8 8:03:00 -0700
+categories: turing, rails
+---
 [FactoryBot](https://github.com/thoughtbot/factory_bot) is an excellent tool to create objects for seeding and testing in Rails. According to thoughtbot (the creators of FactoryBot):
 
 > "factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects), and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance."

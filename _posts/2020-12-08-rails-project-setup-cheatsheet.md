@@ -1,5 +1,9 @@
-# Ruby on Rails Project Setup Cheatsheet
-
+---
+layout: post
+title:  "Rails project setup cheatsheet"
+date:   2020-12-08 7:30:00 -0700
+categories: turing, rails
+---
 One small piece of [Turing's](https://turing.io/) backend mod 2 program is engraining the setup of a Rails project. This cheatsheet is a helpful reference for Gems, config files, migrations, and more.
 
 My awesome classmates have contributed tons of resources like the one below. Primary credit to [Ely Hess](https://www.linkedin.com/in/ely-hess-766716141/) for first compiling this rails setup cheatsheet.

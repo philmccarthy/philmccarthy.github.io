@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails project setup cheatsheet"
-date:   2020-12-08 7:30:00 -0700
+date:   2021-01-14 7:30:00 -0700
 categories: turing, rails
 ---
 One small piece of [Turing's](https://turing.io/) backend mod 2 program is engraining the setup of a Rails project. This cheatsheet is a helpful reference for Gems, config files, migrations, and more.
@@ -26,7 +26,12 @@ gem 'launchy'
 gem 'simplecov'
 gem 'pry'
 gem 'shoulda-matchers'
-gem 'factory_bot_rails'
+gem "orderly"
+gem "awesome_print", :require => "ap"
+gem "hirb"
+
+gem 'factory_bot_rails' # When needing to create model factories
+
 gem 'nyan-cat-formatter' # Optional CLI colorful craziness
 ```
 

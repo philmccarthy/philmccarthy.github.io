@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name's Phil McCarthy and I'm a software engineer.
+My name's Phil McCarthy and I'm a software developer.
 
 Before I made the decision to dedicate my career to software development, I spent 8 years as an editor, copywriter, and marketer in the golf world. To boot, I played professional golf as a member of the PGA of America.
 

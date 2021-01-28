@@ -13,7 +13,7 @@ However, path parameters will override a query parameter if they have matching k
 
 #### Confirming a case of `params` override
 
-In this project, I'm starting from the show page for an application to adopt pets. The application has a 'search for pets' form, which submits a GET request to the `applications_controller` with params[:search] and redirects to the same show page with matching pets.
+In this example project, I'm starting from the show page for an application to adopt pets. The application has a 'search for pets' form, which submits a GET request to the `applications_controller` with params[:search] and redirects to the same show page with matching pets.
 
 In my view, here's the form where I added an arbitrary `:id` query parameter:
 

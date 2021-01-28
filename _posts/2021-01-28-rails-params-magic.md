@@ -2,14 +2,16 @@
 layout: post
 title:  "Rails params Magic"
 date:   2021-01-28 2:00:00 -0700
-categories: turing, rails
+category: rails
 ---
 
 How does Rails build a `params` object?
 
-There are two kinds of parameters: `query string params` and `POST data`. In a URL, everything after the `?` is a query param. And `POST data`, like it sounds, usually comes from an HTML form that a user has filled out within the web app. It can only be sent with an HTTP `POST` request, hence the name. Rails doesn't make any distinctions of one param type over the other within the `request.parameters` hash.
+There are two kinds of parameters: `query string params` and `POST data`. In a URL, everything after the `?` is a query param.
 
-However, path parameters will override a query parameter if they have matching keys (i.e. `:id`). 
+`POST data`, like it sounds, usually comes from an HTML form that a user has filled out within the web app. It can only be sent with an HTTP `POST` request, hence the name. Rails doesn't make any distinctions of one param type over the other within the `request.parameters` hash.
+
+However, path parameters will override a query parameter if they have matching keys (such as `:id`). 
 
 #### Confirming a case of `params` override
 

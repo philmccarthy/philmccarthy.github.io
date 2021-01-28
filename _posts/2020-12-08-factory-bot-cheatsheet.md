@@ -2,7 +2,7 @@
 layout: post
 title:  "Expanding on FactoryBot"
 date:   2020-12-8 8:03:00 -0700
-categories: turing, rails
+category: rails
 ---
 [FactoryBot](https://github.com/thoughtbot/factory_bot) is an excellent tool to create objects for seeding and testing in Rails. According to thoughtbot (the creators of FactoryBot):
 

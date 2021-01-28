@@ -2,7 +2,7 @@
 layout: post
 title:  "My intro to programming"
 date:   2020-11-17 1:30:00 -0700
-categories: turing
+category: turing
 ---
 It's intermission week after an intense 6-week introduction to software engineering at <a href="https://turing.io/" target="_blank">Turing School</a>. Mod 1—the first of four modules that make up the 7-month backend engineering program—was a deep-dive introduction to Object Oriented Programming in Ruby.
 

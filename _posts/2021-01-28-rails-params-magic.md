@@ -19,7 +19,7 @@ In this example project, I'm starting from the show page for an application to a
 
 In my view, here's the form where I added an arbitrary `:id` query parameter:
 
-```rb
+```erb
   <%= form_tag(application_path(@application.id), method: :get) do %>
     <%= text_field_tag :search, params[:search] %></br>
     <%= text_field_tag :id %>

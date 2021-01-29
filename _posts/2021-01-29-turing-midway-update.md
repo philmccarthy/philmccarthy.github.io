@@ -50,7 +50,7 @@ The Mod 3 curriculum will push me to develop mastery in these areas:
   - make API calls using `fetch`
   - use jQuery to traverse and manipulate the Document Object Model (DOM)
 
-Up to this point, I've invested approximately 800 hours into my studies at Turing. The days, weeks, and months are long but fulfilling. I feel like I've learned more than I can fully comprehend from a technical standpoint.
+Up to this point, I've invested approximately 800 hours into my studies at Turing. The days, weeks, and months are long but fulfilling. I feel like I've learned more than I can distill from a technical standpoint.
 
 But I've also had the chance to meet and work with amazing humans. Being a member of the diverse, progressive Turing community has pushed me to check my unconscious bias and hone my active listening skills.
 

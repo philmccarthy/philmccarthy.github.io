@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Midway through Turing's backend program"
-date:   2021-01-22 3:30:00 -0700
+date:   2021-01-29 9:45:00 -0700
 category: turing
 ---
 

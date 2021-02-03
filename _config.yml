@@ -33,6 +33,9 @@ minima:
   social_links:
     github: philmccarthy
     linkedin: pjmcc
+header_pages:
+  - about.md
+  - resume.md
 
 show_excerpts: true
 

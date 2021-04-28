@@ -28,19 +28,19 @@ github_username:  philmccarthy
 
 # Build settings
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: jekyll/minima
 minima:
-  skin: dark
+  skin: solarized-dark
   social_links:
     github: philmccarthy
     linkedin: pjmcc
 header_pages:
   - about.md
   - resume.md
-
 show_excerpts: true
-
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

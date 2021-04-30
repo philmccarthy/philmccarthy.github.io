@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Midway through Turing's backend program"
+title:  "Turing Mod 3 Recap: One Quarter Left"
 date:   2021-03-15 12:45:00 -0700
 category: turing
 ---
 
-I'm two-thirds of the way through [Turing's](https://turing.edu) backend engineering program, and woo, I built some exciting stuff.
+I'm three-quarters of the way through [Turing's](https://turing.edu) backend engineering program, and woo, I built some exciting stuff.
 
 Before Mod 3 (the third quarter of Turing's 4-Mod program), I hadn't consumed or built an API. Six weeks later, I've learned to use Faraday to power my program's consumption of external applications and data. I've also built Rails API-only backends with databases, and exposed tons of RESTful and non-RESTful endpoints and written documentation.
 

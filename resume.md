@@ -4,4 +4,4 @@ title: Resume
 permalink: /resume/
 ---
 
-<iframe src="https://resume.creddle.io/embed/h0d7sertstl" width="850" height="1100" seamless></iframe>
+<iframe width='100%' height=1500 src="https://docs.google.com/document/d/e/2PACX-1vTsCKjMra1VU7kdEBKjxag4VC8W7PNvbR4T4XOeClsrJdbXHvL6jKDPBc6YKXZf9hGB6xuED29roFsh/pub?embedded=true"></iframe>

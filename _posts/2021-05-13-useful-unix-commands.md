@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Useful Unix commands"
-date:   2021-05-013 11:00:00 -0700
+date:   2021-05-13 11:00:00 -0700
 category: turing
 ---
 

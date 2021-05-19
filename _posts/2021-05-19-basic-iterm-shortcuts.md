@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "iTerm Keybindings and Shortcuts"
+title:  "iTerm keybindings and shortcuts"
 date:   2021-05-19 9:00:00 -0700
 category: devEnv
 ---

@@ -5,7 +5,7 @@ date:   2021-05-19 9:00:00 -0700
 category: devEnv
 ---
 
-I recently switched to using the iTerm2 terminal emulator on my Mac. With [Shell Integration](https://iterm2.com/documentation-shell-integration.html) enabled, I discovered a few helpful features that I wanted to document. It sent me down a rabbit hole, and I started this post to keep notes about iTerm features I want to build into my workflow.
+This week, I switched to using the iTerm2 terminal emulator on my Mac. With [Shell Integration](https://iterm2.com/documentation-shell-integration.html) enabled, I discovered a few helpful features that I wanted to document. It sent me down a rabbit hole, and I started this post to keep notes about iTerm features I want to build into my workflow.
 
 | What | How |
 | --- | --- |

@@ -16,7 +16,7 @@ I recently began going through Michael Hartl's Learn Enough Command Line to Be D
 | Cursor to end of line | `^E` |
 | Clear to beginning of line | `^U` |
 | Cursor to mouse | `option + click` |
-| Scroll output out of view | `^L` |
+| Clear (non-destructive) | `^L` |
 | Exit terminal | `^D` |
 | Abort | `^C` |
 | Sleep | `sleep (seconds)` |
@@ -34,19 +34,17 @@ I recently began going through Michael Hartl's Learn Enough Command Line to Be D
 Example of combining file manipulation commands:
 
 ```console
-➜ ~/_turing/5mod/unix echo "From fairest creatures we desire increase," > sonnet_1.txt
-➜ ~/_turing/5mod/unix echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
-➜ ~/_turing/5mod/unix echo "From fairest creatures we desire increase," > line_1.txt
-➜ ~/_turing/5mod/unix echo "That thereby beauty's Rose might never die," > line_2.txt
-➜ ~/_turing/5mod/unix cat line_1.txt > sonnet_1_copy.txt
-➜ ~/_turing/5mod/unix cat sonnet_1_copy.txt
+➜ echo "From fairest creatures we desire increase," > sonnet_1.txt
+➜ echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
+➜ echo "From fairest creatures we desire increase," > line_1.txt
+➜ echo "That thereby beauty's Rose might never die," > line_2.txt
+➜ cat line_1.txt > sonnet_1_copy.txt
+➜ cat sonnet_1_copy.txt
 From fairest creatures we desire increase,
-➜ ~/_turing/5mod/unix cat line_2.txt >> sonnet_1_copy.txt
-➜ ~/_turing/5mod/unix cat sonnet_1_copy.txt
+➜ cat line_2.txt >> sonnet_1_copy.txt
+➜ cat sonnet_1_copy.txt
 From fairest creatures we desire increase,
 That thereby beauty's Rose might never die,
-➜ ~/_turing/5mod/unix diff sonnet_1.txt sonnet_1_copy.txt
-➜ ~/_turing/5mod/unix
 ```
 
 ### Listing
@@ -56,14 +54,14 @@ That thereby beauty's Rose might never die,
 | List all files and directories (except hiddens) | `ls` |
 | List all files and directories (plus hiddens) | `ls -a` |
 | List files ending in .txt | `ls *.txt` |
-| List files in *l*ong format | `ls -l` |
-| List files by *r*eversed *t*ime of modification (*l*ong format) | `ls -rtl` |
+| List files in **l**ong format | `ls -l` |
+| List files by **r**eversed **t**ime of modification (**l**ong format) | `ls -rtl` |
 
 Options can be combined in any order, so `ls -rtl` is the same as `ls -trl` and `ls -r -t -l`
 
 #### Sidebar: Oh My Zsh
 
-I've been using [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) for a while, and a zsh alias I use all the time is `l=ls -lah`, which combines options for *l*ong format, *a*ll files and directories, and *h*uman readable filesize.
+I've been using [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) for a while, and a zsh alias I use all the time is `l=ls -lah`, which combines options for **l**ong format, **a**ll files and directories, and **h**uman readable filesize.
 
 These listing aliases are made available by Oh My Zsh:
 

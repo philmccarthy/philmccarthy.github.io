@@ -1,13 +1,34 @@
 ---
 layout: post
 title:  "Useful Unix commands"
-date:   2021-05-13 11:00:00 -0700
-category: turing
+date:   2021-05-19 11:00:00 -0700
+category: devEnv
 ---
 
 I recently began going through Michael Hartl's Learn Enough Command Line to Be Dangerous course, and I'm using this post to keep notes about useful Unix commands. I'm actively updating this post as I work through the course!
 
 ## Basics
+
+### Using Z shell instead of Bourne-again shell
+
+In 2019, Apple changes the default shell on MacOS to zsh from bash. zsh behaves much like Bash, but it's worth making a few minor configuration updates to make Zsh behave more like Bash. You can [read more](https://scriptingosx.com/2019/06/moving-to-zsh/) about the switch from Bash to Zsh. MacOS also ships with Bash installed! So switching your Mac's default shell to Bash is an option.
+
+I've chosen to keep using zsh, and followed [Hartl's advice](https://news.learnenough.com/macos-bash-zshell) to add these aliases to my `.zshrc` configuration file:
+
+```zsh
+# Avoid accidental deletion.
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+# Prevent rm -f from asking for confirmation on things like `rm -f *.bak`.
+setopt rm_star_silent
+```
+
+Out of the box, zsh doesn't prompt the user when they attempt to remove, move, or copy a file. These behavioral changes make zsh prompt me when I try to remove, move, or copy a file (like bash!).
+
+### Editing and entering commands
+
+Editing the command line is a regular part of a developer's day. These keybindings and commands are helpful to making command line usage more efficient.
 
 | What | How |
 | --- | --- |
@@ -37,7 +58,7 @@ Some of the most important tasks at a command line: manipulating files.
 
 Example of combining file manipulation commands:
 
-```console
+```zsh
 ➜ echo "From fairest creatures we desire increase," > sonnet_1.txt
 ➜ echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
 ➜ echo "From fairest creatures we desire increase," > line_1.txt
@@ -75,7 +96,5 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 ```
-
-### Renaming, copying, deleting
 
 More to come!

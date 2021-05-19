@@ -7,7 +7,7 @@ category: turing
 
 I recently began going through Michael Hartl's Learn Enough Command Line to Be Dangerous course, and I'm using this post to keep notes about useful Unix commands. I'm actively updating this post as I work through the course!
 
-### Editing and Cleaning Up
+## Basics
 
 | What | How |
 | --- | --- |
@@ -21,7 +21,11 @@ I recently began going through Michael Hartl's Learn Enough Command Line to Be D
 | Abort | `^C` |
 | Sleep | `sleep (seconds)` |
 
-### File Manipulation
+## File Manipulation
+
+Some of the most important tasks at a command line: manipulating files.
+
+### Redirecting and appending
 
 | What | How |
 | --- | --- |
@@ -71,5 +75,7 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 ```
+
+### Renaming, copying, deleting
 
 More to come!

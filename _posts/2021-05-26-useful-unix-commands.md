@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Useful Unix commands"
-date:   2021-05-19 11:00:00 -0700
+date:   2021-05-26 5:20:00 -0700
 category: devEnv
 ---
 

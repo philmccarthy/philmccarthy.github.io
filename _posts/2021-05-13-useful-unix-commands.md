@@ -9,7 +9,7 @@ I recently began going through Michael Hartl's Learn Enough Command Line to Be D
 
 ## Basics
 
-### Using Z shell instead of Bourne-again shell
+### Sidebar: Using Z shell instead of Bourne-again shell
 
 In 2019, Apple changes the default shell on MacOS to zsh from bash. zsh behaves much like Bash, but it's worth making a few minor configuration updates to make Zsh behave more like Bash. You can [read more](https://scriptingosx.com/2019/06/moving-to-zsh/) about the switch from Bash to Zsh. MacOS also ships with Bash installed! So switching your Mac's default shell to Bash is an option.
 
@@ -42,7 +42,17 @@ Editing the command line is a regular part of a developer's day. These keybindin
 | Abort | `^C` |
 | Sleep | `sleep (seconds)` |
 
-## File Manipulation
+### Repeating previous commands
+
+Up to this point, I've primarily used up and down arrow to cycle through previously entered commands. But through this course, I learned some extremely helpful commands to make the process of finding past commands more efficient.
+
+| What | How |
+| --- | --- |
+| Run the previous command exactly as written | `!!` |
+| Run the last command by search | `!<argument>` ex: `!curl` |
+| Search interactively through previous commands | `^R` |
+
+## File manipulation
 
 Some of the most important tasks at a command line: manipulating files.
 
@@ -59,15 +69,15 @@ Some of the most important tasks at a command line: manipulating files.
 Example of combining file manipulation commands:
 
 ```zsh
-➜ echo "From fairest creatures we desire increase," > sonnet_1.txt
-➜ echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
-➜ echo "From fairest creatures we desire increase," > line_1.txt
-➜ echo "That thereby beauty's Rose might never die," > line_2.txt
-➜ cat line_1.txt > sonnet_1_copy.txt
-➜ cat sonnet_1_copy.txt
+$ echo "From fairest creatures we desire increase," > sonnet_1.txt
+$ echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
+$ echo "From fairest creatures we desire increase," > line_1.txt
+$ echo "That thereby beauty's Rose might never die," > line_2.txt
+$ cat line_1.txt > sonnet_1_copy.txt
+$ cat sonnet_1_copy.txt
 From fairest creatures we desire increase,
-➜ cat line_2.txt >> sonnet_1_copy.txt
-➜ cat sonnet_1_copy.txt
+$ cat line_2.txt >> sonnet_1_copy.txt
+$ cat sonnet_1_copy.txt
 From fairest creatures we desire increase,
 That thereby beauty's Rose might never die,
 ```
@@ -107,5 +117,59 @@ Move (or simply rename) a file | `mv current_name new_name`
 Copy a file | `cp to_be_copied.txt copy.txt`
 Delete a file | `rm file.txt`
 Delete files without confirmation | `rm -f *.txt`
+
+### Inspecting
+
+The Learn Enough lesson on inspecting files begins by downloading a text file containing 2620 lines. 
+
+#### Sidebar: Downloading a file with cURL
+
+I've seen the `cURL` command in the wild, and this lesson was a good opportunity for me to practice using it to download the `sonnets.txt` file to then inspect it in this lesson. Here's the command:
+
+```console
+$ cURL -OL https://cdn.learnenough.com/sonnets.txt
+$ ls -rtl
+...
+-rw-r--r--  1 pmac  staff  95635 May 26 09:35 sonnets.txt
+...
+```
+
+Above, the `-OL` options on `cURL` combine `--location` and `--remote-name`.
+
+- The `--location` (or `-L`) option makes curl redo the request if the server reports that the requested page has moved to a different location, indicated with a Location header or 3XX (redirect) HTTP response code.
+- The `--remote-name` (or `-O`) option tells curl to write output to a local file named like the remote file we get (only the file part of the remote file is used, not the path). The file will be saved in the current working directory. In this example, the `sonnets.txt` file is saved to the current working directory.
+
+#### Head and tail
+
+| What | How |
+| --- | --- |
+Return the first 10 lines of a file | `head sonnets.txt`
+Return the last 10 lines of a file | `tail sonnets.txt`
+Return the lines, words, bytes of a file | `wc sonnets.txt`
+Combine head and wc with PIPES! | `head sonnets.txt | wc`
+View a file that's actively changing | `tail -f`
+
+##### Sidebar: What the pipe
+
+The reason `head sonnets.txt | wc` works is that the `wc` command can take input from `STDIN` or a filename. In this usage, the result of `head sonnets.txt` is piped into the `wc` command to return its line, word, and byte counts.
+
+#### Less is more
+
+The `less` command allows for navigation of a file. Before going through Learn Enough, I wasn't aware that I had spent plenty of time in `less`! For example, manual pages (i.e. `man <command>`) use `less` to read and display file text in the command line. 
+
+When viewing the contents of a file with `less`, these commands are some of the most useful:
+
+| What | How |
+| --- | --- |
+Move up or down one line | `up & down arrows`
+Move forward one page | `spacebar`
+Move forward one page | `^F`
+Move back one page | `^B`
+Move to end of file | `G`
+Move to beginning of file | `1G`
+Search file for string | `/<string>`
+Move to next search result | `n`
+Move to previous search result | `N`
+Quit `less` | `q`
 
 More to come!

@@ -97,4 +97,15 @@ alias ll='ls -lh'
 alias la='ls -lAh'
 ```
 
+### Renaming, copying, deleting
+
+Beyond listing files, moving, copying and deleting them is the next most common computer-toucher activity!
+
+| What | How |
+| --- | --- |
+Move (or simply rename) a file | `mv current_name new_name`
+Copy a file | `cp to_be_copied.txt copy.txt`
+Delete a file | `rm file.txt`
+Delete files without confirmation | `rm -f *.txt`
+
 More to come!

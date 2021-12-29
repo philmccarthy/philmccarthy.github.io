@@ -5,9 +5,11 @@ date:   2021-05-26 5:20:00 -0700
 category: devEnv
 ---
 
-I recently began going through Michael Hartl's Learn Enough Command Line to Be Dangerous course, and I'm using this post to keep notes about useful Unix commands. I'm actively updating this post as I work through the course!
+I recently began going through Michael Hartl's Learn Enough Command Line to Be Dangerous course, and I'm using this post to keep notes about useful Unix commands.
 
 ## Basics
+
+Learn Enough covers crucial commands for the Unix command line. Unix is a family of operating systems, including Linux, Android, iOS, and macOS.
 
 ### Sidebar: Using Z shell instead of Bourne-again shell
 
@@ -171,5 +173,3 @@ Search file for string | `/<string>`
 Move to next search result | `n`
 Move to previous search result | `N`
 Quit `less` | `q`
-
-More to come!

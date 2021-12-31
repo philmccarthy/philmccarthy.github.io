@@ -21,9 +21,6 @@ $on-laptop:        1000px !default;
 
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
-$grey-color:       grey;
-$grey-color-light: lightgrey;
-$grey-color-dark: rgb(80, 80, 80);
 
 // Use media queries like this:
 // @include media-query($on-palm) {

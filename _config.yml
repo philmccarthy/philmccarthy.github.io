@@ -30,7 +30,7 @@ github_username:  philmccarthy
 theme: minima
 plugins:
   - jekyll-feed
-theme: minima
+  
 minima:
   social_links:
     github: philmccarthy

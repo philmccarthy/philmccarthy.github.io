@@ -30,8 +30,9 @@ github_username:  philmccarthy
 theme: minima
 plugins:
   - jekyll-feed
-  
+
 minima:
+  skin: dark
   social_links:
     github: philmccarthy
     linkedin: pjmcc

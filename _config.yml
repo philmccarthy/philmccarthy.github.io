@@ -22,7 +22,7 @@ title: Phil McCarthy
 description: >- # this means to ignore newlines until "baseurl:"
   ＜ ☕️ 🍷 /＞
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://philmccarthy.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://philmccarthy.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  philmccarthy
 

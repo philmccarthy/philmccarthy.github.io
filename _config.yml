@@ -30,10 +30,8 @@ github_username:  philmccarthy
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
-remote_theme: jekyll/minima
+theme: minima
 minima:
-  skin: solarized-dark
   social_links:
     github: philmccarthy
     linkedin: pjmcc

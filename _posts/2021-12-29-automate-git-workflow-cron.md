@@ -140,8 +140,8 @@ $ crontab -l
   45 10,14,18 * * 1-5 /Users/pmac/bin/backup_notes.sh
 ```
 
-With that, I just had to wait for some jobs to run! Over the next few days, I saw my syncing jobs start to execute. No more thought or effort required.
+With that, I just had to add a similar crontab to my work computer. Once my background work was scheduled, I just had to wait for some jobs to run! Over the next few days, I saw my syncing jobs start to execute from both machines. No more thought or effort required.
 
 ![crontab-commits](/assets/images/crontab-commits.jpg)
 
-I admit that it's a pretty simple use case, and one that many notes apps have completely solved. But I was excited to learn about cron and crontabs, identify a potential use case, and quickly put an automation in place.
+I admit that syncing notes is a pretty simple use case and that many apps have this feature baked in. But I was excited to learn about cron and crontabs, identify a potential use case, and quickly put an automation in place.

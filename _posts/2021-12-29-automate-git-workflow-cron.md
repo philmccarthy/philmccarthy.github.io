@@ -12,6 +12,7 @@ It seemed relatively simple, and also super useful. I even had another use case 
 
 Notable is pretty simple—notes are stored as `.md` files with some extra metadata. So on my two machines, I have a `notes` directory with all of these files stored. I initialized Git and began tracking these files, manually pushing and pulling changes to keep them in sync.
 
+## Considering Solutions
 
 This problem got me thinking about a few related concepts I've heard thrown around at work. One in particular was cron. The DevOps and Data engineers at VIZIO reference cronjobs often when talking about scheduled tasks in our AWS environment. This seemed like a good place to start digging.
 
@@ -58,6 +59,8 @@ This seemed promising. I read the rest of the man page, and this info on the `-e
         and recreates it cannot be used.  After you exit from the editor, the modified crontab will
         be installed automatically.
 ```
+
+## Writing a crontab
 
 I started by writing a basic shell script (`backup_notes.sh`) to automate the manual Git workflow:
 
